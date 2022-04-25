@@ -6,7 +6,7 @@ The data and the code will appear here soon, **watch / star** the repo to get th
 
 In the meantime, have a look at our preprint: https://arxiv.org/abs/2204.10805.
 
-And you want to cite the work, please use
+And if you want to cite the work, please use
 
 ```
 @misc{https://doi.org/10.48550/arxiv.2204.10805,
