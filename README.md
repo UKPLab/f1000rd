@@ -1,9 +1,11 @@
 # F1000RD
 
 This is the official repository for the paper _"Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review"_. 
-The data and the code will appear here soon, for now watch / star the repo to get the updates!
 
-In the meantime, have a look at our preprint: https://arxiv.org/abs/2204.10805
+The data and the code will appear here soon, for now **watch / star** the repo to get the updates! 
+
+In the meantime, have a look at our preprint: https://arxiv.org/abs/2204.10805.
+
 And you want to cite the work, please use
 
 ```
@@ -20,5 +22,6 @@ And you want to cite the work, please use
 
 ```
 
-Contact person: Ilia Kuznetsov, Jan Buchmann
+Contact: Ilia Kuznetsov, Jan Buchmann
+
 https://www.ukp.tu-darmstadt.de/
