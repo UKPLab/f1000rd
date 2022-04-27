@@ -2,7 +2,7 @@
 
 This is the official repository for the paper _"Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review"_. 
 
-The data and the code will appear here soon, **watch / star** the repo to get the updates! 
+The data and the code will appear here soon, watch / star the repo to get the updates, or just check in a while!
 
 In the meantime, have a look at our preprint: https://arxiv.org/abs/2204.10805.
 
