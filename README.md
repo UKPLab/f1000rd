@@ -11,6 +11,8 @@ If you are interested in the intertextual graph data model that is introduced in
 The corpus is based on the data from the open reviewing platform [F1000Research](https://f1000research.com). The data used in the article consists of two parts: the **study sample** used in annotation studies, and the **full crawl** of F1000Reserach used for reference.
 This repository contains the study sample and accompanying analysis code. The full crawl used in this work is available on-demand. Our data comes in three formats: JATS **XML** (only full crawl) is used to generate Intertextual Graphs (**ITG**) -- our novel graph-based data model well-suited for intertextual analysis (https://github.com/UKPLab/intertext-graph.git). While ITGs require our external [library](https://github.com/UKPLab/intertext-graph.git) to work with, we also provide our data in a **simple** CSV-based format (only study sample) to facilitate analysis and task-specific applications. Our data model is backed by the intertext_graph library released separately.
 
+The repository also hosts the annotation **guidelines** used in the studies and the draft **datasheet** for F1000RD.
+
 ## Data structure
 
 ```
@@ -27,7 +29,9 @@ data/
           diff_... <- automatically produced alignments between v1 and v2 if available
           reviews/ <- ITGs for reviews for the first submission version
           linking/ <- links between reviews and the first submission version
+guidelines/ <- annotation guidelines
 requirements.txt
+datasheet.pdf
 ```
 
 If you want to use the ITG representation of the data in your experiments (e.g. `v1.json` in the submission directories), have a closer look at our [intertext_graph](https://github.com/UKPLab/intertext-graph.git) library. It is a general-purpose library that implements a structured data model for representing documents, making it easy to work with document structure, relations and cross-document links. 
