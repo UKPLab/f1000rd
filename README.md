@@ -1,6 +1,6 @@
 # F1000RD Corpus Repository
 
-This repository hosts **F1000RD**, the accompanying dataset for the article _Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review_. It is the first openly licensed, multi-domain corpus of publications, their revisions and peer reviews from an open reviewing platform.
+This repository hosts **F1000RD**, the accompanying dataset for the article [Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review](https://direct.mit.edu/coli/article/doi/10.1162/coli_a_00455/112555/Revise-and-Resubmit-An-Intertextual-Model-of-Text), Computational Linguistics (2022). It is the first openly licensed, multi-domain corpus of publications, their revisions and peer reviews from an open reviewing platform.
 
 If you are interested in the intertextual graph data model that is introduced in the paper, please have a look at [this repository](https://github.com/UKPLab/intertext-graph.git)
 
@@ -53,15 +53,18 @@ To reproduce the analysis from the paper:
 If you use this data in your research, please cite:
 
 ```
-@article{https://doi.org/10.48550/arxiv.2204.10805,
-  doi = {10.48550/ARXIV.2204.10805},
-  url = {https://arxiv.org/abs/2204.10805},
-  author = {Kuznetsov, Ilia and Buchmann, Jan and Eichler, Max and Gurevych, Iryna},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review},
-  journal = {arXiv},
-  year = {2022}
-  }
+@article{10.1162/coli_a_00455,
+    author = {Kuznetsov, Ilia and Buchmann, Jan and Eichler, Max and Gurevych, Iryna},
+    title = "{Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review}",
+    journal = {Computational Linguistics},
+    pages = {1-38},
+    year = {2022},
+    month = {08},
+    issn = {0891-2017},
+    doi = {10.1162/coli_a_00455},
+    url = {https://doi.org/10.1162/coli\_a\_00455},
+    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00455/2038043/coli\_a\_00455.pdf},
+}
 ```
 
 Don't hesitate to send us an e-mail or report an issue, if something is broken or if you have further questions!
