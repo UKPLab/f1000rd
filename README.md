@@ -1,6 +1,6 @@
 # F1000RD Corpus Repository
 
-This repository hosts **F1000RD**, the accompanying dataset for the article _Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review_. It is the first openly licensed, multi-domain corpus of publications, their revisions and peer reviews from an open reviewing platform.
+This repository hosts **F1000RD**, the accompanying dataset for the article [Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review](https://direct.mit.edu/coli/article/doi/10.1162/coli_a_00455/112555/Revise-and-Resubmit-An-Intertextual-Model-of-Text), Computational Linguistics (2022). It is the first openly licensed, multi-domain corpus of publications, their revisions and peer reviews from an open reviewing platform.
 
 If you are interested in the intertextual graph data model that is introduced in the paper, please have a look at [this repository](https://github.com/UKPLab/intertext-graph.git)
 
@@ -10,6 +10,8 @@ If you are interested in the intertextual graph data model that is introduced in
 
 The corpus is based on the data from the open reviewing platform [F1000Research](https://f1000research.com). The data used in the article consists of two parts: the **study sample** used in annotation studies, and the **full crawl** of F1000Research used for reference.
 This repository contains the study sample and accompanying analysis code. The full crawl used in this work is available on-demand. Our data comes in three formats: JATS **XML** (only full crawl) is used to generate Intertextual Graphs (**ITG**) -- our novel graph-based data model well-suited for intertextual analysis (https://github.com/UKPLab/intertext-graph.git). While ITGs require our external [library](https://github.com/UKPLab/intertext-graph.git) to work with, we also provide our data in a **simple** CSV-based format (only study sample) to facilitate analysis and task-specific applications. Our data model is backed by the intertext_graph library released separately.
+
+The repository also hosts the annotation **guidelines** used in the studies and the draft **datasheet** for F1000RD.
 
 ## Data structure
 
@@ -27,7 +29,9 @@ data/
           diff_... <- automatically produced alignments between v1 and v2 if available
           reviews/ <- ITGs for reviews for the first submission version
           linking/ <- links between reviews and the first submission version
+guidelines/ <- annotation guidelines
 requirements.txt
+datasheet.pdf
 ```
 
 If you want to use the ITG representation of the data in your experiments (e.g. `v1.json` in the submission directories), have a closer look at our [intertext_graph](https://github.com/UKPLab/intertext-graph.git) library. It is a general-purpose library that implements a structured data model for representing documents, making it easy to work with document structure, relations and cross-document links. 
@@ -55,15 +59,18 @@ To reproduce the analysis from the paper:
 If you use this data in your research, please cite:
 
 ```
-@article{https://doi.org/10.48550/arxiv.2204.10805,
-  doi = {10.48550/ARXIV.2204.10805},
-  url = {https://arxiv.org/abs/2204.10805},
-  author = {Kuznetsov, Ilia and Buchmann, Jan and Eichler, Max and Gurevych, Iryna},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review},
-  journal = {arXiv},
-  year = {2022}
-  }
+@article{10.1162/coli_a_00455,
+    author = {Kuznetsov, Ilia and Buchmann, Jan and Eichler, Max and Gurevych, Iryna},
+    title = "{Revise and Resubmit: An Intertextual Model of Text-based Collaboration in Peer Review}",
+    journal = {Computational Linguistics},
+    pages = {1-38},
+    year = {2022},
+    month = {08},
+    issn = {0891-2017},
+    doi = {10.1162/coli_a_00455},
+    url = {https://doi.org/10.1162/coli\_a\_00455},
+    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00455/2038043/coli\_a\_00455.pdf},
+}
 ```
 
 ## Contact
