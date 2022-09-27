@@ -8,7 +8,7 @@ If you are interested in the intertextual graph data model that is introduced in
 
 ## What can be found here
 
-The corpus is based on the data from the open reviewing platform [F1000Research](https://f1000research.com). The data used in the article consists of two parts: the **study sample** used in annotation studies, and the **full crawl** of F1000Reserach used for reference.
+The corpus is based on the data from the open reviewing platform [F1000Research](https://f1000research.com). The data used in the article consists of two parts: the **study sample** used in annotation studies, and the **full crawl** of F1000Research used for reference.
 This repository contains the study sample and accompanying analysis code. The full crawl used in this work is available on-demand. Our data comes in three formats: JATS **XML** (only full crawl) is used to generate Intertextual Graphs (**ITG**) -- our novel graph-based data model well-suited for intertextual analysis (https://github.com/UKPLab/intertext-graph.git). While ITGs require our external [library](https://github.com/UKPLab/intertext-graph.git) to work with, we also provide our data in a **simple** CSV-based format (only study sample) to facilitate analysis and task-specific applications. Our data model is backed by the intertext_graph library released separately.
 
 ## Data structure
@@ -37,6 +37,10 @@ If you want to use the ITG representation of the data in your experiments (e.g. 
 
 In the `data/simple/imp_links.csv` table, all implicit linking annotations are shown. Each row has the information for one pair of nodes. In the implicit linking data, these are always sentence pairs. The columns `imp_a` and `imp_b` show the annotation from the main annotators in the main annotation study. The columns `imp_a_re` and `imp_b_re` show the annotations from the main annotators in the re-annotation study. The columns `imp_c_e` and `imp_d_e` show the annotations from the expert annotators. For all annotations, `1` indicates that annotators marked a sentence pair as linked, and `0` as non-linked.
 
+## Data Splits
+
+The data was split by submission, ensuring that there is no overlap between train, dev and test set. Please find the split information in `data/simple/splits.csv`.
+
 ## Analytics run-through
 
 To reproduce the analysis from the paper:
@@ -45,6 +49,8 @@ To reproduce the analysis from the paper:
 * `pip install -r requirements.txt`
 * Run the `analytics.ipynb` notebook in the `analysis` folder
 * Mind that some analysis will require the full crawl of F1000Research.
+
+## Citation
 
 If you use this data in your research, please cite:
 
@@ -59,6 +65,8 @@ If you use this data in your research, please cite:
   year = {2022}
   }
 ```
+
+## Contact
 
 Don't hesitate to send us an e-mail or report an issue, if something is broken or if you have further questions!
 
