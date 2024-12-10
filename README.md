@@ -53,6 +53,9 @@ To reproduce the analysis from the paper:
 * `pip install -r requirements.txt`
 * Run the `analytics.ipynb` notebook in the `analysis` folder
 * Mind that some analysis will require the full crawl of F1000Research.
+  
+## License
+The dataset is licensed CC-BY-SA 4.0.
 
 ## Citation
 
